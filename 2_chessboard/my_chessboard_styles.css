@@ -1,20 +1,23 @@
-/*
+body {
+  background-image: url('grey.png');
+}
 
-Some references you may find useful:
+.board {
+  border: thick solid black;
+  margin: 36px auto;
+}
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/background-image#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/border#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/margin#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/color#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/height#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/text-align#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow#Syntax
-https://developer.mozilla.org/en-US/docs/Web/CSS/width#Syntax
-http://www.colorzilla.com/gradient-editor/
+.square {
+  color: gold;
+  font-size: 48px;
+  height: 70px;
+  width: 72px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
 
-Note that I've included the background image for the page in this folder, "grey.png"
+}
+.dark_square {
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,black), color-stop(100%,grey));
+  background: -webkit-linear-gradient(-45deg,  black 0%,grey 100%);
 
-Write your CSS rules below.
-
-*/
+}
